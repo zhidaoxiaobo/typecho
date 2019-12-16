@@ -412,7 +412,7 @@ header.wrapper-md h1 {
 
 
 /*头像背景*/
- #aside .wrapper {background:url(https://cdn.jsdelivr.net/gh/zhidaoxiaobo/typecho/5.3.2/assets/img/tx.gif); background-size:80%; background-repeat: no-repeat; background-position: center; color:#999}
+ #aside .wrapper {background:url(https://cdn.jsdelivr.net/gh/zhidaoxiaobo/typecho/img/tx.gif); background-size:80%; background-repeat: no-repeat; background-position: center; color:#999}
  /*6.0头像阴影去除
 .avatar .normal-shadow {box-shadow: 0 0 0 #000 !important;}*/
 /*头像颤抖*/
@@ -424,7 +424,7 @@ header.wrapper-md h1 {
 /*定义滚动条轨道 内阴影+圆角*/
 ::-webkit-scrollbar-track {-webkit-box-shadow:inset 0 0 6px rgba(0, 0, 0, 0.3); border-radius:10px; background-color:rgba(255, 255, 255, 0)}
 /*定义滑块 内阴影+圆角*/
-::-webkit-scrollbar-thumb {border-radius:20px; -webkit-box-shadow:inset 0 0 6px rgba(54, 110, 187, 0.9); background-color:#366EBB}
+::-webkit-scrollbar-thumb {border-radius:20px; -webkit-box-shadow:inset 0 0 6px rgba(54, 110, 187, 0.9); background-color:#15e18b8c}
 /*文章iframe自适应*/
 .iframe_video {position: relative; width: 100%;}
 @media only screen and (max-width: 767px) {.iframe_video {height: 15em;}}
