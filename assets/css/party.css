@@ -1,4 +1,4 @@
-@charset "utf8";
+﻿@charset "utf8";
 .wybj {
 	width: 100%;
 	height: 100%;
@@ -404,6 +404,38 @@ header.wrapper-md h1 {
     left: 0;
     top: 0
 }
+
+
+
+
+
+
+
+/*头像背景*/
+ #aside .wrapper {background:url(https://img.phenxso.com/uploads/big/a3027ecbefa88572291e907fedd9c082.gif); background-size:80%; background-repeat: no-repeat; background-position: center; color:#999}
+ /*6.0头像阴影去除
+.avatar .normal-shadow {box-shadow: 0 0 0 #000 !important;}*/
+/*头像颤抖*/
+.avatar :hover{display: inline-block; -webkit-transform-origin: center center; -ms-transform-origin: center center; transform-origin: center center; -webkit-animation: Pshake_Crazy 10s ease-in-out infinite; animation: Pshake_Crazy 10s ease-in-out infinite;}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {width:8px; height:8px; background-color:rgba(255, 255, 255, 0)
+}
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {-webkit-box-shadow:inset 0 0 6px rgba(0, 0, 0, 0.3); border-radius:10px; background-color:rgba(255, 255, 255, 0)}
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {border-radius:20px; -webkit-box-shadow:inset 0 0 6px rgba(54, 110, 187, 0.9); background-color:#366EBB}
+/*文章iframe自适应*/
+.iframe_video {position: relative; width: 100%;}
+@media only screen and (max-width: 767px) {.iframe_video {height: 15em;}}
+@media only screen and (min-width: 768px) and (max-width: 991px) {.iframe_video {height: 20em;}}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {.iframe_video {height: 30em;}}
+@media only screen and (min-width: 1200px) {.iframe_video {height: 40em;}}
+/*时光机iframe自适应*/
+.iframe_cross {position:relative; width:100%; height:0; padding-bottom:75%}
+.iframe_cross iframe {position:absolute; width:100%; height:100%; left:0; top:0}
+
+
 /*首页文章列表悬停上浮*/
 .blog-post .panel:not(article) {
     transition: all 0.3s;
