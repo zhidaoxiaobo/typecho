@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 
 /*! handsome 2019-09-13 */
 @font-face {
@@ -8810,7 +8810,7 @@ html::-webkit-scrollbar-thumb:hover {
 }
 
 #footer a:hover {
-    color: #2a3033
+    color: #0e99ece6
 }
 
 .topButton {

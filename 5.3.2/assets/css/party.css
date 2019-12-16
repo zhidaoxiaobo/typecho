@@ -412,7 +412,7 @@ header.wrapper-md h1 {
 
 
 /*头像背景*/
- #aside .wrapper {background:url(https://cdn.jsdelivr.net/gh/zhidaoxiaobo/typecho/5.3.1/assets/img/tx.gif); background-size:80%; background-repeat: no-repeat; background-position: center; color:#999}
+ #aside .wrapper {background:url(https://cdn.jsdelivr.net/gh/zhidaoxiaobo/typecho/5.3.2/assets/img/tx.gif); background-size:80%; background-repeat: no-repeat; background-position: center; color:#999}
  /*6.0头像阴影去除
 .avatar .normal-shadow {box-shadow: 0 0 0 #000 !important;}*/
 /*头像颤抖*/
