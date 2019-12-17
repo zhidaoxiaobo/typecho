@@ -360,53 +360,15 @@ header.wrapper-md h1 {
     font-weight: bold!important
 }
 
-/*B站视频挂载*/
-.iframe_video {
-    position: relative;
-    width: 100%;
-}
-
-@media only screen and (max-width: 767px) {
-    .iframe_video {
-        height: 15em;
-    }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .iframe_video {
-        height: 20em;
-    }
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .iframe_video {
-        height: 30em;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    .iframe_video {
-        height: 40em;
-    }
-}
-
-.iframe_cross {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 75%
-}
-
-.iframe_cross iframe {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0
-}
-
-
-
+/*文章iframe自适应*/
+.iframe_video {position: relative; width: 100%;}
+@media only screen and (max-width: 767px) {.iframe_video {height: 15em;}}
+@media only screen and (min-width: 768px) and (max-width: 991px) {.iframe_video {height: 20em;}}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {.iframe_video {height: 30em;}}
+@media only screen and (min-width: 1200px) {.iframe_video {height: 40em;}}
+/*时光机iframe自适应*/
+.iframe_cross {position:relative; width:100%; height:0; padding-bottom:75%}
+.iframe_cross iframe {position:absolute; width:100%; height:100%; left:0; top:0}
 
 
 
@@ -418,22 +380,7 @@ header.wrapper-md h1 {
 /*头像颤抖*/
 .avatar :hover{display: inline-block; -webkit-transform-origin: center center; -ms-transform-origin: center center; transform-origin: center center; -webkit-animation: Pshake_Crazy 10s ease-in-out infinite; animation: Pshake_Crazy 10s ease-in-out infinite;}
 
-/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
-::-webkit-scrollbar {width:8px; height:8px; background-color:rgba(255, 255, 255, 0)
-}
-/*定义滚动条轨道 内阴影+圆角*/
-::-webkit-scrollbar-track {-webkit-box-shadow:inset 0 0 6px rgba(0, 0, 0, 0.3); border-radius:10px; background-color:rgba(255, 255, 255, 0)}
-/*定义滑块 内阴影+圆角*/
-::-webkit-scrollbar-thumb {border-radius:20px; -webkit-box-shadow:inset 0 0 6px rgba(54, 110, 187, 0.9); background-color:#15e18b8c}
-/*文章iframe自适应*/
-.iframe_video {position: relative; width: 100%;}
-@media only screen and (max-width: 767px) {.iframe_video {height: 15em;}}
-@media only screen and (min-width: 768px) and (max-width: 991px) {.iframe_video {height: 20em;}}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {.iframe_video {height: 30em;}}
-@media only screen and (min-width: 1200px) {.iframe_video {height: 40em;}}
-/*时光机iframe自适应*/
-.iframe_cross {position:relative; width:100%; height:0; padding-bottom:75%}
-.iframe_cross iframe {position:absolute; width:100%; height:100%; left:0; top:0}
+
 
 
 /*首页文章列表悬停上浮*/
@@ -456,7 +403,14 @@ header.wrapper-md h1 {
 .OwO.OwO-open .OwO-body {
     display:table
 }
+/*左侧文章图标和评论头像鼠标悬停旋转*/
+.img-circle {
+    transition: all 0.3s;
+}
 
+.img-circle:hover {
+    transform: rotate(360deg);
+}
 /*头像呼吸光环和鼠标悬停旋转放大*/
 .img-full {
     width: 100px;
@@ -491,14 +445,7 @@ header.wrapper-md h1 {
     }
 }
 
-/*左侧文章图标和评论头像鼠标悬停旋转*/
-.img-circle {
-    transition: all 0.3s;
-}
 
-.img-circle:hover {
-    transform: rotate(360deg);
-}
 
 /*文章内打赏图标跳动*/
 .btn-pay {
