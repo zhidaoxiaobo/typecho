@@ -4457,7 +4457,8 @@ a.text-#000000:hover {
 }
 
 .font-bold {
-    font-weight: 700
+    font-weight: 700;
+color: #FFF
 }
 
 .text-3x {
