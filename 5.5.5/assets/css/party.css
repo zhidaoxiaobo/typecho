@@ -514,7 +514,7 @@ header.wrapper-md h1 {
     transition:all .35s;
     content:"";
     position:absolute;
-    background:linear-gradient(#86a2d9 30%, #3c67bd 70%);
+    background:linear-gradient(#3c67bd8c 30%,#3c67bd 70%);
     width:1em;
     left:0;
     box-shadow:0 3px 3px rgba(32,160,255,.4);
