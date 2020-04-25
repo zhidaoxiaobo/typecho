@@ -1,0 +1,501 @@
+@charset "utf8";
+.wybj {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: -1
+}
+
+
+/*首页文章图片获取焦点放大*/
+.item-thumb{
+    cursor: pointer;  
+    transition: all 0.6s;  
+}
+
+.item-thumb:hover{
+      transform: scale(1.06);  
+}
+
+.item-thumb-small{
+    cursor: pointer;  
+    transition: all 0.6s;
+}
+
+.item-thumb-small:hover{
+    transform: scale(1.06);
+}
+
+/*首页文章版式圆角化,整体大小位置*/
+.panel{
+    border: none;
+    border-radius: 7px;
+}
+
+.panel-small{
+    border: none;
+    border-radius: 7px;
+}
+
+.item-thumb{
+    border-radius: 7px;  
+}
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar{
+    width: 3px;
+    height: 16px;
+    background-color: rgba(255,255,255,0);
+}
+ 
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0);
+}
+ 
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555;
+}
+#阴影颜色修改rgba后面的值
+/*panel阴影*/
+.panel{
+   box-shadow: 1px 1px 5px 5px rgba(51, 255, 255, 0.35);
+    -moz-box-shadow: 1px 1px 5px 5px rgba(51, 255, 255, 0.35);
+}
+
+.panel:hover{
+    box-shadow: 1px 1px 5px 5px rgba(51, 255, 255, 0.35);
+    -moz-box-shadow: 1px 1px 5px 5px rgba(51, 255, 255, 0.35);
+}
+
+.panel-small{
+    box-shadow: 1px 1px 5px 5px rgba(51, 255, 255, 0.35);
+    -moz-box-shadow: 1px 1px 5px 5px rgba(51, 255, 255, 0.35);
+}
+
+.panel-small:hover{
+    box-shadow: 1px 1px 5px 5px rgba(51, 255, 255, 0.35);
+    -moz-box-shadow: 1px 1px 5px 5px rgba(51, 255, 255, 0.35);
+}
+
+.app.container {
+    box-shadow: 0 0 30px rgba(51, 255, 255, 0.35);
+} 
+
+/*如果也想使盒子四周也有阴影，加上以下代码*/
+.app.container {
+    box-shadow: 0 0 30px rgba(51, 255, 255, 0.35);
+}
+
+#kotori {
+    position: absolute;
+    left: -15px;
+    bottom: -15px;
+    max-height: 110px;
+    transition: all .3s
+}
+
+#kotori:hover {
+    left: 0;
+    bottom: 0
+}
+
+#kotori.hidekotori {
+    left: -110px;
+    bottom: -110px
+}
+
+@media screen and (max-width:767px) {
+    #kotori {
+        display: none
+    }
+
+    .blog-post>.panel:hover .index-post-img .item-thumb {
+        transform: none!important
+    }
+}
+
+.index-post-title a:hover {
+    color: #2ebaae
+}
+
+.wrapper-md .comment-list .comment-parent,.wrapper-md .comment-list .comment-children {
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #ddd;
+    padding-top: 10px
+}
+
+.max-img {
+    max-height: 400px
+}
+
+.navi-wrap .navi.clearfix>ul.nav {
+    padding-bottom: 100px
+}
+
+.app-aside-folded.navi-wrap {
+    max-height: calc(100% - 50px)
+}
+
+.lg-backdrop {
+    background-color: rgba(0,0,0,.8)
+}
+
+.skPlayer-name {
+    font-family: "Source Sans Pro","Hiragino Sans GB","Microsoft Yahei",SimSun,Helvetica,Arial,Sans-serif
+}
+
+html.fancybox-enabled {
+    overflow-y: auto
+}
+
+.fancybox-bg {
+    background-color: rgba(0,0,0,.95)
+}
+
+.fancybox-arrow:after {
+    background-color: rgba(0,0,0,.8)
+}
+
+.blog-post .post-meta.wrapper-lg {
+    padding-top: 15px
+}
+
+.share,.yellow,.red,.lblue,.green {
+    background-position-y: 50%
+}
+
+.timeline .tl-date {
+    color: #fff;
+    text-shadow: 0 0 4px #000
+}
+
+body.modal-open {
+    overflow-y: auto;
+    padding-right: 0 !important
+}
+
+.reply2view {
+    background-color: transparent;
+    border: solid 1px #bbb
+}
+
+#content {
+    transition: all .3s
+}
+
+.OwO .OwO-logo {
+    height: 28px
+}
+
+#tag_toc.fixed #toc {
+    width: 100%
+}
+
+.page-navigator .next a,.page-navigator .prev a {
+    height: 31px
+}
+
+.page-navigator>li:last-child>a,.page-navigator>li:last-child>span {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px
+}
+
+.item-thumb-small {
+    background-position: left
+}
+
+@media screen and (min-width:1200px) {
+    .sticky {
+        position: absolute;
+        top: 10px;
+        left: 15px
+    }
+
+    .panel .item-thumb {
+        height: 300px
+    }
+
+    #post-panel .blog-post {
+        position: relative
+    }
+
+    #post-panel .panel {
+        overflow: hidden
+    }
+
+    #post-panel .panel .post-meta {
+        position: relative;
+        margin-top: -300px;
+        height: 300px;
+        padding-top: 133px!important;
+        padding-bottom: 0!important;
+        background-color: rgba(0,0,0,.3);
+        color: #fff!important;
+        transition: all .3s
+    }
+
+    #post-panel .panel .post-meta,#post-panel .panel-small .post-meta {
+        border-radius: 5px
+    }
+
+    #post-panel .panel .post-meta *,#post-panel .panel-small .post-meta * {
+        color: #fff!important
+    }
+
+    #post-panel .panel .post-meta>h2,#post-panel .panel-small .post-meta>h2 {
+        text-align: center;
+        text-shadow: 0 0 3px #fff
+    }
+
+    #post-panel .panel .post-meta>p,#post-panel .panel .post-meta>div,#post-panel .panel-small .post-meta>p,#post-panel .panel-small .post-meta>div {
+        transition: all .3s;
+        transform: translateY(-10px);
+        opacity: 0
+    }
+
+    #post-panel .panel .post-meta>.text-muted,#post-panel .panel-small .post-meta>.text-muted {
+        position: absolute;
+        bottom: 20px
+    }
+
+    #post-panel .panel .post-meta>.line {
+        position: absolute;
+        bottom: 40px;
+        width: 740px
+    }
+
+    #post-panel .panel-small .post-meta>.line {
+        position: absolute;
+        bottom: 40px;
+        width: 94%;
+        border: 1px solid #fff;
+    }
+
+    #post-panel .panel .post-meta>.summary {
+        position: absolute;
+        bottom: 60px;
+        width: 740px
+    }
+
+    #post-panel .panel-small .post-meta>.summary {
+        position: absolute;
+        bottom: 60px;
+        width: calc(100% - 40px);
+    }
+
+    #post-panel .panel-small {
+        display: inline-block;
+        height: 300px;
+        width: calc(100% - 10px);
+        margin-right: 20px
+    }
+
+    #post-panel .panel-small:nth-child(2n) {
+        margin-right: 0
+    }
+
+    #post-panel .panel-small .index-img-small,#post-panel .panel-small .index-img-small .item-thumb-small {
+        height: 100%;
+        width: 100%
+    }
+
+    #post-panel .panel-small .post-meta {
+        position: absolute;
+        height: 300px;
+        width: calc(100% - 10px);
+        padding: 133px 20px 0 20px!important;
+        background-color: rgba(0,0,0,.3);
+        color: #fff!important;
+        transition: all .3s
+    }
+
+    #post-panel .panel:hover .post-meta,#post-panel .panel-small:hover .post-meta {
+        background-color: rgba(0,0,0,.6)
+    }
+
+    #post-panel .panel:hover .post-meta>p,#post-panel .panel:hover .post-meta>div,#post-panel .panel-small:hover .post-meta>p,#post-panel .panel-small:hover .post-meta>div {
+        opacity: 1;
+        transform: translateY(0)
+    }
+
+    #post-panel .panel:hover .post-meta,#post-panel .panel-small:hover .post-meta {
+        padding-top: 80px!important
+    }
+
+    #post-panel .ahover {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0
+    }
+
+    .blog-post>.panel:hover .index-post-img,.blog-post>.panel-small:hover .index-post-img-small {
+        filter: blur(3px)
+    }
+}
+
+header.bg-light.wrapper-md {
+    margin-top: 30px;
+    background-color: transparent!important;
+    background-size: 100%;
+    border: 0;
+    text-align: center;
+    text-shadow: 0 0 3px #000
+}
+
+
+header.wrapper-md h1 {
+    font-size: 32px
+}
+
+header.wrapper-md h1 {
+    font-weight: bold!important
+}
+
+/*B站视频挂载*/
+.iframe_video {
+    position: relative;
+    width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+    .iframe_video {
+        height: 15em;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .iframe_video {
+        height: 20em;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .iframe_video {
+        height: 30em;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .iframe_video {
+        height: 40em;
+    }
+}
+
+.iframe_cross {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 75%
+}
+
+.iframe_cross iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0
+}
+/*首页文章列表悬停上浮*/
+.blog-post .panel:not(article) {
+    transition: all 0.3s;
+}
+
+.blog-post .panel:not(article):hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 10px rgba(73, 90, 47, 0.47);
+}
+
+/*文章标题居中*/
+.panel h2{
+    text-align: left;
+}
+.post-item-foot-icon{
+    text-align: center;
+}
+.OwO.OwO-open .OwO-body {
+    display:table
+}
+
+/*头像呼吸光环和鼠标悬停旋转放大*/
+.img-full {
+    width: 100px;
+    border-radius: 50%;
+    animation: light 4s ease-in-out infinite;
+    transition: 0.5s;
+}
+
+.img-full:hover {
+    transform: scale(1.15) rotate(720deg);
+}
+
+@keyframes light {
+    0% {
+        box-shadow: 0 0 4px #f00;
+    }
+
+    25% {
+        box-shadow: 0 0 16px #00b5e5;
+    }
+
+    50% {
+        box-shadow: 0 0 4px #00f;
+    }
+
+    75% {
+        box-shadow: 0 0 16px #00b5e5;
+    }
+
+    100% {
+        box-shadow: 0 0 4px #f00;
+    }
+}
+
+/*左侧文章图标和评论头像鼠标悬停旋转*/
+.img-circle {
+    transition: all 0.3s;
+}
+
+.img-circle:hover {
+    transform: rotate(360deg);
+}
+
+/*文章内打赏图标跳动*/
+.btn-pay {
+    animation: star 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes star {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
+.bilibili {
+    position: relative;
+    width: 100%;
+}
+ /*哔哩哔哩视频自适应题*/
+@media only screen and (max-width: 767px) {
+    .bilibili {height: 15em;}
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .bilibili {height: 20em;}
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .bilibili {height: 30em;}
+}
+@media only screen and (max-width: 1200px) {
+    .bilibili {height: 40em;}
+}

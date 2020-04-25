@@ -1,0 +1,38 @@
+.streamline{
+    background: rgba(255,255,255,0);
+}
+.bg-white{
+    background: rgba(255,255,255,0);
+}
+.bg-light{
+	background: rgba(255,255,255,0);
+}
+.bg-auto::before{
+    background: rgba(255,255,255,0);
+}
+.bg-auto:before{
+	background: rgba(255,255,255,0);
+}
+#post-panel{
+    background: rgba(255,255,255,0);
+}
+.bg-auto:before{
+    background: rgba(255,255,255,0);
+}
+#post-content blockquote{
+	background: rgba(255,255,255,0);
+    color: #fff;
+    border: 1px solid white;
+}
+table tr{
+	background-color: rgba(255,255,255,.0);
+}
+table tr:nth-child(2n){
+	background-color: rgba(255,255,255,.2);
+}
+.panel{
+	background-color: rgba(255,255,255,.15);
+}
+.bg-light .dker, .bg-light.dker{
+    background-color: rgba(0,0,0,.3)
+}
