@@ -2,7 +2,14 @@ var baiduAudio = {
 	stopped: true,
 	getToken: function() {
 		baiduAudio.stop();
-		baiduAudio.tokenData = {"access_token":"24.5f81a4ca055ffc45cc5ded583472e533.2592000.1589524431.282335-11519842","session_key":"9mzdDtR28FiGPSXmad2qL3eFLQEBAg8IPU4EmRiCIdb1TQyeJnPoZiJ\/hiW3VbayhqSzIf1aaWjCgQcqyTOemIjlzdcvNQ==","spd":"5","pit":"5","per":0,"enable":true};
+		baiduAudio.tokenData = {
+			"access_token": "24.c92cf090243175d760c1211371c48464.2592000.1590825156.282335-11519842",
+			"session_key": "9mzdWEmYqSVM9O2VUddwzSThiHhst2dUG\/bXRkoZSROBHmTxbtQgUIQtVk4w2RMZetBH0taGBSKGFnVHzlk4ONz3ZC7ayA==",
+			"spd": "5",
+			"pit": "5",
+			"per": 0,
+			"enable": true
+		};
 		baiduAudio.makePlayer();
 	},
 	makePlayer: function() {
@@ -39,7 +46,7 @@ var baiduAudio = {
 			per = baiduAudio.tokenData.per;
 			baiduAudio.audioArray = [];
 			for (var i = 0; i < textArray.length; i++) {
-				var address = 'http://tsn.baidu.com/text2audio?tex=' + encodeURIComponent(textArray[i]) + '&lan=zh&ctp=1&cuid=' + cuid + '&per=' + per + '&spd=' + spd + '&pit=' + pit + '&tok=' + tok;
+				var address = '//tsn.baidu.com/text2audio?tex=' + encodeURIComponent(textArray[i]) + '&lan=zh&ctp=1&cuid=' + cuid + '&per=' + per + '&spd=' + spd + '&pit=' + pit + '&tok=' + tok;
 				baiduAudio.audioArray.unshift(address);
 			}
 			baiduAudio.audio.preload = true;

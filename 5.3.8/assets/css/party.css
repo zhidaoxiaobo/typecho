@@ -676,3 +676,42 @@ code {
     border-bottom:1px solid #00000008;
     position:relative
 }
+
+
+/*文章底部版权*/
+.cpright {
+    padding: 10px;
+    background: rgba(220, 220, 220, 0.1);
+    margin: 8px 0;
+    font-size: 14px;
+    border-left: 3px #15bd90c7 solid;
+    position: relative;
+    z-index: 1;
+    font-family: "Microsoft Yahei","Droid Serif",Georgia,"Times New Roman",STHeiti,serif;
+    text-align: left;
+    line-height: 2em;
+}
+.cpright a:hover {
+    color: #f51a91de!important;
+}
+.cpright a {
+    color: #43ceb9e6!important;
+    margin: 4px;
+    border-bottom: 0px solid #999!important;
+}
+.cutline {
+    border-top: 1px dotted #ccc;
+    height: 1px;
+    margin: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+.cutline span {
+    background-color: rgb(236, 237, 238);
+    border: 1px solid #d6d6d6;
+    color: #d14;
+    font: 12px Arial,Microsoft JhengHei;
+    padding: 2px 4px;
+    position: relative;
+    top: -17px;
+}
