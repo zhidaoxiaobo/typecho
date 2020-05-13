@@ -49,3 +49,57 @@
     from {transform:scaleX(0);transform-origin:left;opacity:0}
     to {transform:scaleX(1);transform-origin:left;}
 }
+
+
+@font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 900;
+    font-display:block;src: url(../webfonts/fa-solid-900.eot);
+    src: url(../webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"),url(../webfonts/fa-solid-900.woff2) format("woff2"),url(../webfonts/fa-solid-900.woff) format("woff"),url(../webfonts/fa-solid-900.ttf) format("truetype"),url(../webfonts/fa-solid-900.svg#fontawesome) format("svg")
+}
+
+
+.fa,.fas {
+    font-weight: 900;
+}
+.fa,.far,.fas {
+    font-family: 'Font Awesome 5 Free';
+}
+
+.fa,.fab,.fad,.fal,.far,.fas {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.fa-play:before {
+    content: "\f04b"
+}
+
+.fa-play-circle:before {
+    content: "\f144"
+}
+
+*,:after,:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.fa-pause:before {
+    content: "\f04c"
+}
+
+.fa-pause-circle:before {
+    content: "\f28b"
+}
+
+.fa-stop:before {
+    content: "\f04d"
+}
+
+.fa-stop-circle:before {
+    content: "\f28d"
+}
