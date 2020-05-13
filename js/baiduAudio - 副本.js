@@ -2,7 +2,7 @@ var baiduAudio = {
 	stopped: true,
 	getToken: function() {
 		baiduAudio.stop();
-		baiduAudio.tokenData = {"access_token":"24.c92cf090243175d760c1211371c48464.2592000.1590825156.282335-11519842","session_key":"9mzdWEmYqSVM9O2VUddwzSThiHhst2dUG\/bXRkoZSROBHmTxbtQgUIQtVk4w2RMZetBH0taGBSKGFnVHzlk4ONz3ZC7ayA==","spd":"5","pit":"5","per":106,"enable":true};
+		baiduAudio.tokenData = zdaoxb_framework.baiduAudio;
 		baiduAudio.makePlayer();
 
 	},
