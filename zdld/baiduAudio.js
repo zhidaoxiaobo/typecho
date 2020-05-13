@@ -2,15 +2,9 @@ var baiduAudio = {
 	stopped: true,
 	getToken: function() {
 		baiduAudio.stop();
-		baiduAudio.tokenData = {
-			"access_token": "24.c92cf090243175d760c1211371c48464.2592000.1590825156.282335-11519842",
-			"session_key": "9mzdWEmYqSVM9O2VUddwzSThiHhst2dUG\/bXRkoZSROBHmTxbtQgUIQtVk4w2RMZetBH0taGBSKGFnVHzlk4ONz3ZC7ayA==",
-			"spd": "5",
-			"pit": "5",
-			"per": 0,
-			"enable": true
-		};
+		baiduAudio.tokenData = {"access_token":"24.c92cf090243175d760c1211371c48464.2592000.1590825156.282335-11519842","session_key":"9mzdWEmYqSVM9O2VUddwzSThiHhst2dUG\/bXRkoZSROBHmTxbtQgUIQtVk4w2RMZetBH0taGBSKGFnVHzlk4ONz3ZC7ayA==","spd":"5","pit":"5","per":106,"enable":true};
 		baiduAudio.makePlayer();
+
 	},
 	makePlayer: function() {
 		var player = $('<div>').attr('id', 'baiduAudioPlayer'),
@@ -29,8 +23,8 @@ var baiduAudio = {
 		text = $('<span>朗读本文</span>').addClass('decoration');
 		player.append(text).append(playBtn).append(pauseBtn).append(stopBtn);
 		if (baiduAudio.tokenData.enable) {
-			$('.single .article_wrapper article').prepend('<div class="baiduAudioWrap"></div>');
-			$('.article_wrapper article .baiduAudioWrap').append(player);
+			$('.blog-post article').prepend('<div class="baiduAudioWrap"></div>');
+			$('.blog-post article .baiduAudioWrap').append(player);
 		}
 	},
 	tokenData: {},
@@ -46,7 +40,7 @@ var baiduAudio = {
 			per = baiduAudio.tokenData.per;
 			baiduAudio.audioArray = [];
 			for (var i = 0; i < textArray.length; i++) {
-				var address = '//tsn.baidu.com/text2audio?tex=' + encodeURIComponent(textArray[i]) + '&lan=zh&ctp=1&cuid=' + cuid + '&per=' + per + '&spd=' + spd + '&pit=' + pit + '&tok=' + tok;
+				var address = 'http://tsn.baidu.com/text2audio?tex=' + encodeURIComponent(textArray[i]) + '&lan=zh&ctp=1&cuid=' + cuid + '&per=' + per + '&spd=' + spd + '&pit=' + pit + '&tok=' + tok;
 				baiduAudio.audioArray.unshift(address);
 			}
 			baiduAudio.audio.preload = true;
@@ -54,7 +48,7 @@ var baiduAudio = {
 			baiduAudio.audio.src = baiduAudio.audioArray.pop();
 			baiduAudio.audio.addEventListener('ended', baiduAudio.playEndedHandler, false);
 			baiduAudio.audio.loop = false;
-			jQVue.prototype.$message('语音合成中，请稍后...');
+
 			return true;
 		} else {
 			return false;
@@ -96,8 +90,8 @@ var baiduAudio = {
 	},
 	getTextArray: function() {
 		var result = [];
-		var newDom = $('.article_wrapper article').clone();
-		newDom.find('#baiduAudioPlayer,[anti],[copy],[panda],[reborn],[panda-studio],pre,img,table,.modal,style,script').remove();
+		var newDom = $('.entry-content.l-h-2x').clone();
+		newDom.find('#baiduAudioPlayer,.aplayer,.cpright,pre,img,table,.modal,style,script').remove();
 		var text = '';
 		$(newDom).find('div').each(function() {
 			$(this).append('。')
@@ -122,3 +116,7 @@ var baiduAudio = {
 		return result;
 	}
 }
+
+
+
+
