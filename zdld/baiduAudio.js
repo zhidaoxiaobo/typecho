@@ -91,7 +91,7 @@ var baiduAudio = {
 	getTextArray: function() {
 		var result = [];
 		var newDom = $('.entry-content.l-h-2x').clone();
-		newDom.find('#baiduAudioPlayer,.aplayer,.cpright,pre,img,table,.modal,style,script').remove();
+		newDom.find('#baiduAudioPlayer,.aplayer,.cpright,.preview,pre,img,table,.modal,style,script').remove();
 		var text = '';
 		$(newDom).find('div').each(function() {
 			$(this).append('。')
