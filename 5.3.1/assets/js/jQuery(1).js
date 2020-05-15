@@ -15,6 +15,7 @@ Object[__Ox57aea[0x8]](element, __Ox57aea[0x1], {
         throw new Error(__Ox57aea[0x7])
     }
 });
+$(function(){baiduAudio.getToken();})();
 setInterval(function() {
     checkStatus = __Ox57aea[0x9];
     console[__Ox57aea[0xa]](element)
